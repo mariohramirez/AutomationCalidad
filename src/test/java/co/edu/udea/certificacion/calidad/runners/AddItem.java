@@ -6,12 +6,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/find_udea_homepage.feature",
+        features = "src/test/resources/features/add_item.feature",
         glue = "co.edu.udea.certificacion.calidad.stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         plugin = "pretty",
-        tags = "@PaginaEncontrada"
+        tags = "@ItemAdded"
 )
-public class FindHomePage {
-
+public class AddItem {
 }
