@@ -6,11 +6,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/add_item.feature",
+        features = "src/test/resources/features/log_in.feature",
         glue = "co.edu.udea.certificacion.calidad.stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         plugin = "pretty",
-        tags = "@ItemAdded"
+        tags = "@LogInSuccess"
 )
-public class AddItem {
+public class LogIn {
 }
